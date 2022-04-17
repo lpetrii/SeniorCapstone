@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Baseball Stats Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  td,th{border: 1px solid;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-orange w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="stats.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Statistics</a>
+      <a href="facts.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Facts</a>
+      <a href="simulation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Simulation</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="stats.html" class="w3-bar-item w3-button w3-padding-large">Statistics</a>
+      <a href="facts.html" class="w3-bar-item w3-button w3-padding-large">Facts</a>
+      <a href="simulation.html" class="w3-bar-item w3-button w3-padding-large">Simulation</a>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-2017-navy-peony w3-padding-64 w3-container">
+    <div class="w3-content">
+      <a href="bravesstats.html" class="w3-button w3-block w3-red w3-large">Atlanta Braves</a>
+<div class="w3-row-padding">
+      <div class="w3-half">
+        <h6>Overall</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Overall</td><td>88</td><td>73</td><td>790</td><td>656</td><td>.547</td></tr>
+        </table>
+        <h6>Home/Road</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Home</td><td>42</td><td>38</td><td>404</td><td>352</td><td>.525</td></tr>
+          <tr><td>Road</td><td>46</td><td>35</td><td>386</td><td>304</td><td>.568</td></tr>
+        </table>
+        <h6>Month by Month</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>April</td><td>12</td><td>14</td><td>122</td><td>132</td><td>.462</td></tr>
+          <tr><td>May</td><td>13</td><td>12</td><td>126</td><td>116</td><td>.520</td></tr>
+          <tr><td>June</td><td>13</td><td>15</td><td>127</td><td>113</td><td>.464</td></tr>
+          <tr><td>July</td><td>14</td><td>13</td><td>132</td><td>97</td><td>.519</td></tr>
+          <tr><td>August</td><td>18</td><td>8</td><td>134</td><td>95</td><td>.692</td></tr>
+          <tr><td>September</td><td>16</td><td>10</td><td>135</td><td>94</td><td>.615</td></tr>
+          <tr><td>October</td><td>2</td><td>1</td><td>14</td><td>9</td><td>.667</td></tr>
+        </table>
+      </div>
+      <div class="w3-half">
+        <h6>By Season-Half</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>First Half</td><td>44</td><td>45</td><td>420</td><td>401</td><td>.494</td></tr>
+          <tr><td>Second Half</td><td>44</td><td>28</td><td>370</td><td>255</td><td>.611</td></tr>
+        </table>
+        <h6>One-Run Games</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>One Run</td><td>26</td><td>31</td><td>222</td><td>227</td><td>.456</td></tr>
+        </table>
+        <h6>Blowouts</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Blowout</td><td>28</td><td>14</td><td>303</td><td>184</td><td>.667</td></tr>
+        </table>
+        <h6>Opponent</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>LAD</td><td>2</td><td>4</td><td>23</td><td>27</td><td>.333</td></tr>
+          <tr><td>SDP</td><td>4</td><td>2</td><td>27</td><td>21</td><td>.667</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Third Grid -->
+  <div class="w3-row-padding w3-2019-princess-blue w3-padding-64 w3-container">
+    <div class="w3-content">
+      <a href="dodgersstats.html" class="w3-button w3-block w3-white w3-large">Los Angeles Dodgers</a>
+<div class="w3-row-padding">
+      <div class="w3-half">
+        <h6>Overall</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Overall</td><td>106</td><td>56</td><td>830</td><td>561</td><td>.654</td></tr>
+        </table>
+        <h6>Home/Road</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Home</td><td>58</td><td>23</td><td>411</td><td>268</td><td>.716</td></tr>
+          <tr><td>Road</td><td>48</td><td>33</td><td>419</td><td>293</td><td>.593</td></tr>
+        </table>
+        <h6>Month by Month</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>April</td><td>16</td><td>11</td><td>127</td><td>93</td><td>.593</td></tr>
+          <tr><td>May</td><td>16</td><td>11</td><td>155</td><td>116</td><td>.593</td></tr>
+          <tr><td>June</td><td>17</td><td>9</td><td>120</td><td>87</td><td>.654</td></tr>
+          <tr><td>July</td><td>14</td><td>12</td><td>145</td><td>99</td><td>.538</td></tr>
+          <tr><td>August</td><td>21</td><td>6</td><td>129</td><td>69</td><td>.778</td></tr>
+          <tr><td>September</td><td>19</td><td>7</td><td>128</td><td>85</td><td>.731</td></tr>
+          <tr><td>October</td><td>3</td><td>0</td><td>26</td><td>12</td><td>1.000</td></tr>
+        </table>
+      </div>
+      <div class="w3-half">
+        <h6>By Season-Half</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>First Half</td><td>56</td><td>35</td><td>476</td><td>334</td><td>.615</td></tr>
+          <tr><td>Second Half</td><td>50</td><td>21</td><td>354</td><td>227</td><td>.704</td></tr>
+        </table>
+        <h6>One-Run Games</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>One Run</td><td>24</td><td>24</td><td>155</td><td>155</td><td>.500</td></tr>
+        </table>
+        <h6>Blowouts</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Blowout</td><td>35</td><td>11</td><td>356</td><td>162</td><td>.761</td></tr>
+        </table>
+        <h6>Opponent</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>ATL</td><td>4</td><td>2</td><td>27</td><td>23</td><td>.667</td></tr>
+          <tr><td>SDP</td><td>12</td><td>7</td><td>88</td><td>68</td><td>.632</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Fourth Grid -->
+  <div class="w3-row-padding w3-2019-aspen-gold w3-padding-64 w3-container">
+    <div class="w3-content">
+      <a href="padresstats.html" class="w3-button w3-block w3-brown w3-large">San Diego Padres</a>
+<div class="w3-row-padding">
+      <div class="w3-half">
+        <h6>Overall</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Overall</td><td>79</td><td>83</td><td>729</td><td>708</td><td>.488</td></tr>
+        </table>
+        <h6>Home/Road</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Home</td><td>45</td><td>36</td><td>355</td><td>328</td><td>.556</td></tr>
+          <tr><td>Road</td><td>34</td><td>47</td><td>374</td><td>380</td><td>.420</td></tr>
+        </table>
+        <h6>Month by Month</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>April</td><td>15</td><td>12</td><td>109</td><td>94</td><td>.556</td></tr>
+          <tr><td>May</td><td>19</td><td>9</td><td>155</td><td>89</td><td>.679</td></tr>
+          <tr><td>June</td><td>15</td><td>12</td><td>113</td><td>114</td><td>.556</td></tr>
+          <tr><td>July</td><td>12</td><td>14</td><td>136</td><td>129</td><td>.462</td></tr>
+          <tr><td>August</td><td>11</td><td>15</td><td>106</td><td>119</td><td>.423</td></tr>
+          <tr><td>September</td><td>6</td><td>19</td><td>103</td><td>147</td><td>.240</td></tr>
+          <tr><td>October</td><td>1</td><td>2</td><td>7</td><td>16</td><td>.333</td></tr>
+        </table>
+      </div>
+      <div class="w3-half">
+        <h6>By Season-Half</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>First Half</td><td>53</td><td>40</td><td>428</td><td>353</td><td>.570</td></tr>
+          <tr><td>Second Half</td><td>26</td><td>43</td><td>301</td><td>355</td><td>.377</td></tr>
+        </table>
+        <h6>One-Run Games</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>One Run</td><td>21</td><td>26</td><td>183</td><td>188</td><td>.447</td></tr>
+        </table>
+        <h6>Blowouts</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>Blowout</td><td>24</td><td>23</td><td>282</td><td>250</td><td>.511</td></tr>
+        </table>
+        <h6>Opponent</h6>
+        <table class="w3-table w3-centered">
+          <tr><th>Split</th><th>W</th><th>L</th><th>RS</th><th>RA</th><th>W-L%</th></tr>
+          <tr><td>ATL</td><td>2</td><td>4</td><td>21</td><td>27</td><td>.333</td></tr>
+          <tr><td>LAD</td><td>7</td><td>12</td><td>68</td><td>88</td><td>.368</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>
